@@ -13,6 +13,7 @@
   --white-text: #ffffff;
   --footer-background: #2f303a;
   --card-set-gap: 30px;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -287,19 +288,32 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.social-links {
+.social-list {
   display: flex;
   justify-content: space-between;
   padding-left: 32px;
   padding-right: 32px;
   fill: #afb1b8;
 }
-instagram-link:hover,
-.instagram-link:focus {
-  background-color: var(--accent-color);
+.social-link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.social-link {
+  fill: #afb1b8;
+}
+.social-link:hover,
+.social-link-item:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-text);
+  cursor: pointer;
 }
 
 .team-content {
@@ -323,6 +337,21 @@ instagram-link:hover,
 }
 .section-team {
   background-color: #f5f4fa;
+}
+/*our clients*/
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-link {
+  fill: var(--icon-color);
+}
+
 }
 /*our project*/
 
