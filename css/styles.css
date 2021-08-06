@@ -351,8 +351,12 @@ img {
 .client-link {
   fill: var(--icon-color);
 }
-
-}
+ .our-clients {
+   display: flex;
+   margin-top: 50px;
+ }
+.client-item:not(:last-child) {
+  margin-right: 30px;
 /*our project*/
 
 .project-cards {
@@ -432,5 +436,4 @@ img {
   color: var(--accent-color);
 }
 .footer-addres .item:not(:last-child) {
-  margin-bottom: 9px;
-}
+  margin-bottom: 9px}
